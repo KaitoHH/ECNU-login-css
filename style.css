@@ -1,1 +1,19 @@
-/* custom CSS */
+form>table>tbody>tr {
+    display: none;
+}
+
+form>table>tbody>tr:nth-child(2), form>table>tbody>tr:nth-child(5) {
+    display: table-row !important;
+}
+
+form>table>tbody>tr:nth-child(5)>td:nth-child(1), form>table>tbody>tr:nth-child(5)>td:nth-child(3) {
+    display: none;
+}
+
+form>table>tbody>tr:nth-child(5)>td:nth-child(2)>table {
+    width: 100%;
+}
+
+form>table>tbody>tr:nth-child(5)>td:nth-child(2)>table>tbody>tr:nth-child(3)>td:nth-child(2) {
+    width: 1%;
+}
