@@ -89,7 +89,7 @@ body {
  */
 
 form>table>tbody>tr:nth-child(5)::before {
-  content: '华东师范大学';
+  content: 'ECNU - 统一认证服务';
   position: absolute;
   height: 57px;
   line-height: 57px;
@@ -204,6 +204,7 @@ form>table>tbody>tr:nth-child(6)>td:nth-child(1)>a::after {
 	font-weight: bolder;
 	font-size: 18px;
 	padding-top:5px;
+	right: 30.3%;
 }
 
 /*
