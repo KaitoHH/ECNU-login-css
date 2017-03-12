@@ -1,73 +1,211 @@
-body, html{
-	width: 100%;
-	height: 100%;
-	margin: 0;
+/*
+ * FRAME-MODIFY
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 form {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
 }
 
 form>table {
-	margin-top:10%;
-	height: 50%;
-	width: 40%;
-	margin-left: 30%;
-	margin-right: 30%;
-
-	border: #d7d7d7;
-	/*border-radius: 10px;*/
-	box-shadow: 2px 2px 5px #d7d7d7;
+  height: 390px;
+  width: 40%;
+  min-width: 345px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: #d7d7d7;
+  box-shadow: 0px 0px 10px #151515;
 }
 
 form>table>tbody>tr {
-    display: none;
+  display: none;
 }
 
 form>table>tbody>tr:nth-child(5) {
-    display: table-row !important;
+  display: table-row !important;
 }
 
-form>table>tbody>tr:nth-child(5)>td:nth-child(1), form>table>tbody>tr:nth-child(5)>td:nth-child(3) {
-    display: none;
+form>table>tbody>tr:nth-child(5)>td:nth-child(1),
+form>table>tbody>tr:nth-child(5)>td:nth-child(3) {
+  display: none;
 }
 
-form>table>tbody>tr:nth-child(5)>td:nth-child(2)>table {
-    width: 100%;
+td>table {
+  width: 100%;
+  height: 270px !important;
+  vertical-align: text-bottom !important;
+  padding-top: 30px;
 }
 
-form>table>tbody>tr:nth-child(5)>td:nth-child(2)>table>tbody>tr:nth-child(3)>td:nth-child(2) {
-    width: 1%;
+td>table>tbody>tr:nth-child(3)>td:nth-child(2) {
+  width: 1%;
 }
+
+td>table>tbody>tr {
+  height: 40px;
+}
+
+td>table>tbody>tr>td {
+  height: 40px;
+}
+
+td>table>tbody>tr:nth-child(5) {
+  display: none;
+}
+
+td>table>tbody>tr:nth-child(7)>td:nth-child(2)>a::after {}
+
+
+/*
+ * BODY-MODIFY
+ */
+
+body {
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489338723123&di=b8fa764458ac2e76a77e5e3cf5441b1c&imgtype=0&src=http%3A%2F%2Fnews.ecnu.edu.cn%2F_upload%2Farticle%2Fimages%2Fe6%2Fab%2F64765bb34bf4bf7fb3f495e5cb6a%2Ffa890a3e-733e-4800-8ca8-6d6ae8806b24.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/*
+ * ICON-MODIFY
+ */
+
+form>table>tbody>tr:nth-child(5)::before {
+  content: '华东师范大学';
+  position: absolute;
+  height: 57px;
+  line-height: 57px;
+  padding-left: 30px;
+  letter-spacing: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+form>table>tbody>tr:nth-child(5) {
+  background-color: rgba(187, 1, 51, 0.8) !important;
+}
+
+form>table>tbody>tr:nth-child(5)>td:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0) !important;
+  padding-bottom: 0;
+}
+
+td>table {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+
+/*
+ * WORD-MODIFY
+ */
 
 td img {
-	display:none;
+  display: none;
 }
 
 #safecode {
-	display: block !important;
+  display: block !important;
+  margin-left: 10px;
 }
 
 td>font>span {
-	padding: 40px !important;
+  padding-right: 40px !important;
+  padding-left: 40px !important;
 }
 
-form>table>tbody>tr:nth-child(5)>td:nth-child(2)>table>tbody>tr:nth-child(1)>td:nth-child(2)::before {
-    content: '用户';
-    position:absolute;
+td::before,
+a::after {
+  position: absolute;
+  color: #6f6f6f;
+  letter-spacing: 3px;
 }
 
-form>table>tbody>tr:nth-child(5)>td:nth-child(2)>table>tbody>tr:nth-child(2)>td:nth-child(2)::before {
-    content: '密码';
-    position:absolute;
+td>table>tbody>tr:nth-child(1)>td:nth-child(2)::before {
+  content: '用户';
 }
 
-form>table>tbody>tr:nth-child(5)>td:nth-child(2)>table>tbody>tr:nth-child(3)>td:nth-child(2)::before {
-    content: '验证';
-    position:absolute;
+td>table>tbody>tr:nth-child(2)>td:nth-child(2)::before {
+  content: '密码';
 }
 
-form>table>tbody>tr:nth-child(5)>td:nth-child(2)>table>tbody>tr:nth-child(7)>td:nth-child(2)>a::after{
-    content: '忘记密码';
+td>table>tbody>tr:nth-child(3)>td:nth-child(2)::before {
+  content: '验证';
+}
+
+td>table>tbody>tr:nth-child(7)>td:nth-child(2)>a::after {
+  right: 30.3%;
+  content: '忘记密码';
+}
+
+
+/*
+ * INPUT-MODIFY
+ */
+
+input[type="password"],
+input[type="text"] {
+  height: 25px !important;
+}
+
+
+/*
+ * BUTTON-MODIFY
+ */
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #bb0133;
+  border: 0;
+  padding: 5px;
+  padding-left: 22px;
+  padding-right: 22px;
+  color: #fff;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  cursor: pointer;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+  cursor: pointer;
+  background-color: #840023;
+  color: #e6e6e6;
+}
+
+
+/*
+ * ANIMATE
+ */
+
+form>table {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
