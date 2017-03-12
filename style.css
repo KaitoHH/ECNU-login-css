@@ -33,8 +33,13 @@ form>table>tbody>tr {
   display: none;
 }
 
-form>table>tbody>tr:nth-child(5) {
+form>table>tbody>tr:nth-child(5),
+form>table>tbody>tr:nth-child(6) {
   display: table-row !important;
+}
+
+form>table>tbody>tr:nth-child(5) {
+	height: 390px;
 }
 
 form>table>tbody>tr:nth-child(5)>td:nth-child(1),
@@ -187,6 +192,19 @@ input[type="reset"]:active {
   color: #e6e6e6;
 }
 
+
+/*
+ * ENTRANCE-MODIFY
+ */
+
+form>table>tbody>tr:nth-child(6)>td:nth-child(1)>a::after {
+	content: '选课系统(本科生)快速入口';
+	color: #fff;
+	text-shadow: 0 0 3px #000;
+	font-weight: bolder;
+	font-size: 18px;
+	padding-top:5px;
+}
 
 /*
  * ANIMATE
