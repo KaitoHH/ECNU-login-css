@@ -70,9 +70,6 @@ td>table>tbody>tr:nth-child(5) {
   display: none;
 }
 
-td>table>tbody>tr:nth-child(7)>td:nth-child(2)>a::after {}
-
-
 /*
  * BODY-MODIFY
  */
