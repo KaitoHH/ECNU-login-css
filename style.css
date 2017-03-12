@@ -175,11 +175,14 @@ input[type="reset"] {
   padding-left: 22px;
   padding-right: 22px;
   color: #fff;
+  transition:background-color 0.3s ease-in;
+  -webkit-transition:background-color 0.3s ease-in;
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
   cursor: pointer;
+  background-color: #840023;
 }
 
 input[type="submit"]:active,
@@ -205,7 +208,7 @@ form>table>tbody>tr:nth-child(6)>td:nth-child(1)>a::after {
 }
 
 /*
- * ANIMATE
+ * ANIMATION
  */
 
 form>table {
